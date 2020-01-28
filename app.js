@@ -32,3 +32,4 @@ app.controller('MyWorksController', function($scope) {
 app.controller('ResourcesController', function($scope) {
   $scope.message = 'Hello from ResourcesController';
 });
+
