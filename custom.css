@@ -17,3 +17,7 @@ a:hover {
 .h5-title {
 	color: #005CB7;
 }
+
+p.pub-authors {
+	line-height: 1.0; 
+}
