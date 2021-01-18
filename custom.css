@@ -30,3 +30,10 @@ a:hover {
 p.pubs {
 	line-height: 1.0; 
 }
+
+@media only screen and (max-width: 768px) {
+  .container-fluid
+  {
+    text-align: center;
+  }
+}
