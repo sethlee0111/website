@@ -6,8 +6,17 @@ img, a, a:focus {
     outline: none;
 }
 
+.navbar-light {
+  background-color: #89ABE3;
+  font-family:Cabin !important;
+}
+
 a {
 border-bottom:solid 1px transparent;
+}
+
+.bottom-container {
+  background-color: #BFC7D6;
 }
 
 a:hover {
