@@ -17,6 +17,11 @@ app.config(function($routeProvider){
       controller  : 'ResourcesController'
     })
 
+    .when('/thesis', {
+      templateUrl : 'pages/thesis.html',
+      controller  : 'ThesisController'
+    })
+
     .otherwise({redirectTo: '/'});
     
     });
@@ -31,5 +36,9 @@ app.controller('MyWorksController', function($scope) {
 
 app.controller('ResourcesController', function($scope) {
   $scope.message = 'Hello from ResourcesController';
+});
+
+app.controller('ThesisController', function($scope) {
+  $scope.message = 'Hello from ThesisController';
 });
 

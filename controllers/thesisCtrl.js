@@ -1,5 +1,5 @@
 var myApp = angular.module('seth_website',['ngRoute']);
 
-myApp.controller('HomeController', ['$scope', function($scope) {
+myApp.controller('ThesisController', ['$scope', function($scope) {
   $scope.greeting = 'Hola!';
 }]);
