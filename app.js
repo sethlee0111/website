@@ -22,6 +22,12 @@ app.config(function($routeProvider){
       controller  : 'ThesisController'
     })
 
+    .when('/demo', {
+      redirectTo: function(routeParams) {
+        window.location = 'http://107.23.225.239';
+    }
+    })
+
     .otherwise({redirectTo: '/'});
     
     });
