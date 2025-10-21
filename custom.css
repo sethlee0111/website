@@ -1,39 +1,281 @@
+/* Modern Academic Website Styles */
+
+/* Base Typography */
 body {
-  font-family: 'Crimson Text', sans-serif !important;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2d3748;
+  background-color: #f7fafc;
 }
 
 img, a, a:focus {
-    outline: none;
-}
-
-.navbar-light {
-  background-color: #89ABE3;
-  font-family:Cabin !important;
+  outline: none;
 }
 
 a {
-border-bottom:solid 1px transparent;
+  color: #2b6cb0;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #1a4d7e;
+  border-bottom-color: #2b6cb0;
+  text-decoration: none;
+}
+
+/* Profile Sidebar */
+.profile-section {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f7fafc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: #1a202c;
+}
+
+.profile-name-ko {
+  font-size: 0.95rem;
+  color: #718096;
+  margin-bottom: 1rem;
+}
+
+.profile-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4a5568;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.profile-edu {
+  font-size: 0.875rem;
+  color: #718096;
+  line-height: 1.5;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  background: #edf2f7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+
+.social-icon img {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.social-icon:hover img {
+  opacity: 1;
+}
+
+/* Main Content */
+.main-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.bio-text {
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Publications */
+.publication-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.publication-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.pub-title {
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.pub-title a {
+  color: #2d3748;
+  border-bottom: none;
+}
+
+.pub-title a:hover {
+  color: #2b6cb0;
+}
+
+.pub-authors {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.375rem;
+  line-height: 1.5;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.pub-award {
+  font-size: 0.9rem;
+  color: #b7791f;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  background: #fef5e7;
+  border-left: 3px solid #d4af37;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Work Experience */
+.experience-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.exp-company {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d3748;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.company-icon {
+  opacity: 0.8;
+  vertical-align: middle;
+}
+
+.exp-date {
+  font-size: 0.875rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+.exp-title {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.25rem;
+}
+
+.exp-team {
+  font-size: 0.875rem;
+  color: #718096;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 991px) {
+  .main-content {
+    padding: 2rem;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-date {
+    margin-top: 0.25rem;
+  }
+}
+
+/* Legacy navbar styles (if needed) */
+.navbar-light {
+  background-color: #89ABE3;
+  font-family: 'Inter', sans-serif;
 }
 
 .bottom-container {
   background-color: #BFC7D6;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.h5-title {
-	color: #005CB7;
-}
-
-p.pubs {
-	line-height: 1.0; 
-}
-
-@media only screen and (max-width: 768px) {
-  .container-fluid
-  {
-    text-align: center;
-  }
 }
